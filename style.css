@@ -1,0 +1,174 @@
+/* Основний стиль */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Заголовок */
+header {
+    background: #003366;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Навігаційне меню */
+nav {
+    background: #002244;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #0055a5;
+    border-radius: 5px;
+}
+
+/* Головний контент */
+main {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+.news-item {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    margin: 0;
+    color: #003366;
+    font-size: 1.2em;
+}
+
+.date {
+    font-size: 0.85em;
+    color: #666;
+    text-align: right;
+}
+
+/* Форма повідомлення про злочин */
+#reportForm {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(3, 169, 244, 0.3);
+    margin: auto;
+}
+
+#reportForm label {
+    color: #0d47a1;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    font-size: 1em;
+}
+
+#reportForm input, #reportForm textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #0d47a1;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+#reportForm button {
+    background-color: #0d47a1;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+#reportForm button:hover {
+    background-color: #1565c0;
+}
+
+/* Підвал */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #003366;
+    color: #ffffff;
+    width: 100%;
+}
+
+/* Мобільна версія */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        text-align: center;
+        padding: 12px;
+    }
+
+    main {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    #reportForm {
+        padding: 15px;
+    }
+
+    #reportForm label, #reportForm input, #reportForm textarea, #reportForm button {
+        font-size: 0.9em;
+    }
+}
